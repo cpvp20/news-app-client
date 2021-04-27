@@ -1,0 +1,28 @@
+<h1>news works!</h1>
+<div class="container">
+  <div class="config">
+    <p>
+      <textarea name="tema" id="idTextarea" cols="50" rows="1"></textarea>
+    </p>
+    <p>
+      <input type="submit" (click)="sendData()">
+    </p>
+  </div>
+
+  <div class="news-container">
+    <div class="grid">
+      <div *ngFor="let item of newsArr" class="xs-100 md-50 lg-33">
+          <img *ngIf="item.urlToImage" src="{{item.urlToImage}}" alt="news image"
+              onError="this.src='https://www.publicdomainpictures.net/pictures/280000/nahled/not-found-image-15383864787lu.jpg'">
+          <img *ngIf="!item.urlToImage"
+              src="https://www.publicdomainpictures.net/pictures/280000/nahled/not-found-image-15383864787lu.jpg"
+              alt="news image">
+          <p>
+              <a href="{{item.url}}">{{item.url}}</a>
+          </p>
+      </div>
+  </div>
+  </div>
+
+
+</div>

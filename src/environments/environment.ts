@@ -3,7 +3,11 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  clientId: '1030081198848-vnrcqspggpvnief7deejn3gsajof2654.apps.googleusercontent.com',
+  clientSecret: '3C_GJYhBwaII7eUh0EA8cwM3',
+  apiUrl: 'http://localhost.com:3000/',
+  socketUrl: 'http://localhost.com:3000'
 };
 
 /*

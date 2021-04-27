@@ -1,0 +1,9 @@
+<h1>Usuarios</h1>
+<button (click)="handleClick($event)">clic me</button>
+
+<app-users-list (onUserSelected)="handleUserSelected($event)" [items]="users"></app-users-list>
+
+<app-user-data [user]="selectedUser"></app-user-data>
+
+
+

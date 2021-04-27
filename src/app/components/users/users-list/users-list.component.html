@@ -1,0 +1,6 @@
+<h2>Listado de usuarios</h2>
+<ul>
+    <li *ngFor="let user of users">
+      <a (click)="selectUser(user)">{{user.name}}</a>
+    </li>
+  </ul>
